@@ -1,0 +1,37 @@
+/* Fonts */
+@font-face {
+  font-family: "Coolvetica";
+  src: url(../assets/fonts/coolvetica.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AlKisah";
+  src: url(../assets/fonts/al_kisah.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AgencyFb";
+  src: url(../assets/fonts/agencyb.ttf) format("truetype");
+}
+
+/* Header Parallax Element Style*/ 
+.paral {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 90%;
+  }
+.paralsec {
+  background-image: url(../assets/img/Header.jpg);
+}
+
+.paral p {
+color:#f5f5f5;
+}
+   
+  /* Heading for Parallax Section */ 
+  .paral h1 {
+  color: #f5f5f5;
+  }
+
+.jumbotron{margin-bottom: 0;}
