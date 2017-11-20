@@ -12,19 +12,19 @@ gulp.task('browser-sync',() => {
 gulp.task('copyAssets', () => {
   gulp
     .src('assets/**/*')
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public/assets'))
 })
 
 gulp.task('copyCss', () => {
   gulp
-    .src('css/**/*')
-    .pipe(gulp.dest('public'))
+    .src('css/*')
+    .pipe(gulp.dest('public/css'))
 })
 
 gulp.task('copyJs', () => {
   gulp
-    .src('js/**/*')
-    .pipe(gulp.dest('public'))
+    .src('js/*')
+    .pipe(gulp.dest('public/js'))
 })
 
 gulp.task('copyIndex', () => {
@@ -39,4 +39,4 @@ gulp.task('dev',['browser-sync'], () => {
   gulp.watch('css/**/*.css', browserSync.reload)
 })
 
-gulp.task('prod', ['copyIndex','copyCss','copyAssets'])
+gulp.task('prod', ['copyIndex','copyCss','copyJs','copyAssets'])
