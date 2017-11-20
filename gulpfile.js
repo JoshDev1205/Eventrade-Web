@@ -9,8 +9,34 @@ gulp.task('browser-sync',() => {
   })
 })
 
+gulp.task('copyAssets', () => {
+  gulp
+    .src('assets/**/*')
+    .pipe(gulp.dest('public'))
+})
+
+gulp.task('copyCss', () => {
+  gulp
+    .src('css/**/*')
+    .pipe(gulp.dest('public'))
+})
+
+gulp.task('copyJs', () => {
+  gulp
+    .src('js/**/*')
+    .pipe(gulp.dest('public'))
+})
+
+gulp.task('copyIndex', () => {
+  gulp
+    .src('index.html')
+    .pipe(gulp.dest('public'))
+})
+
 gulp.task('dev',['browser-sync'], () => {
   gulp.watch('*.html', browserSync.reload)
   gulp.watch('js/**/*.js', browserSync.reload)
   gulp.watch('css/**/*.css', browserSync.reload)
 })
+
+gulp.task('prod', ['copyIndex','copyCss','copyAssets'])
