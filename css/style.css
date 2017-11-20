@@ -200,5 +200,33 @@ color:#f5f5f5;
   content: 'Viaje de Incentivo';
 }
 
+/* Team Seaction */
 
+.team-section {
+  min-height: 85vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../assets/img/pexels.jpeg);
+  background-position: center center;
+}
 
+.team-item {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.team-item > p {
+  margin-bottom: 0px;
+  font-size: .875em;
+  text-align: justify;
+  color: white;
+}
+
+.team-item > h2,span {
+  color: white;
+}
+
+.team-item > h2 {
+  margin-bottom: 0px;
+}
