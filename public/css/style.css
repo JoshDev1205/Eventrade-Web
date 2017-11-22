@@ -140,7 +140,8 @@ color:#f5f5f5;
 
 .jumbotron{margin-bottom: 0;}
 
-/* Background for Thumbnail gallery */
+/* Services Section */
+
 [class*='hero-'] {
   display: flex;
   justify-content: center;
@@ -200,37 +201,6 @@ color:#f5f5f5;
   content: 'Viaje de Incentivo';
 }
 
-/* Team Seaction */
-
-.team-section {
-  min-height: 90vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url(../assets/img/pexels.jpeg);
-  background-position: center center;
-}
-
-.team-item {
-  background-color: black;
-  opacity: 0.8;
-}
-
-.team-item > p {
-  margin-bottom: 0px;
-  font-size: .8125em;
-  text-align: justify;
-  color: white;
-  font-weight: bold;
-}
-
-.team-item > h3,h5 {
-  color: white;
-}
-
-.team-item > h3 {
-  margin-bottom: 0px;
-}
-
 .service_title {
   /* border: .1em solid; */
   text-transform: uppercase;
@@ -240,4 +210,50 @@ color:#f5f5f5;
   padding: .3em 1.9em;
   color: rgb(101,25,103);
   box-shadow: 4px 5px 10px #888888;
+}
+
+.services_section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Team Seaction */
+
+.tm-section {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../assets/img/team_desktop.jpg);
+  background-position: center center;
+}
+
+.tm-item {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.tm-item > p {
+  margin-bottom: 0px;
+  font-size: .8125em;
+  text-align: justify;
+  color: white;
+  font-weight: bold;
+}
+
+.tm-item > h3,h5 {
+  color: white;
+}
+
+.tm-item > h3 {
+  margin-bottom: 0px;
+}
+
+.tm-section-mb {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-image: url(../assets/img/team_mobile.jpg);
+  background-position: 50% 90%;
 }
