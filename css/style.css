@@ -352,3 +352,37 @@ color:#f5f5f5;
   box-shadow: none;
   padding: 0;
 }
+
+.contact-frase {
+  font-size: 1.7em;
+  font-family: AgencyFb;
+}
+
+.contact-frase > p {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.span-blue {
+  color: rgb(0,158,226);
+  font-family: AlKisah;
+  font-size: 1.6em;
+}
+
+.span-dark-yellow {
+  color:rgb(255, 135, 0);
+  font-family: AlKisah;
+  font-size: 1.6em;
+}
+
+.span-dark-purple {
+  color: rgb(161,49,135);
+  font-family: AlKisah;
+  font-size: 1.6em;
+}
+
+.bg-gradient {
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
